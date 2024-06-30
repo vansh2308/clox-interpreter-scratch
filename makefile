@@ -4,8 +4,8 @@ CFLAGS=-Wall -g
 
 all: mainapp
 
-mainapp: main.o chunk.o debug.o memory.o
-	$(CC) $(CFLAGS) main.o chunk.o debug.o memory.o -o mainapp
+mainapp: main.o chunk.o debug.o memory.o value.c
+	$(CC) $(CFLAGS) main.o chunk.o debug.o memory.o value.o -o mainapp
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $^
