@@ -4,4 +4,4 @@ test
 mainapp
 
 *.o
-./demo.txt
+/demo.txt
